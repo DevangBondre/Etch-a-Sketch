@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="heading">Etch-A-Sketch</h1>
+
+    <div class="container">
+       
+        <div class="sketchButtons">
+            <select  id="gridOptions">  
+            <option value="base"><b>Pick Grid Dimensions</b></option>
+            <option value="10">10x10</option> 
+            <option value="16">16x16</option>
+            <option value="24">24x24</option>
+            <option value="48">48x48</option>
+            </select>
+             <br><br>
+             
+        <button class="btn" id="black"><b>Black Colour</b></button><br><br>
+        <button class="btn" id="rainbow"><b>Rainbow Mode</b></button><br><br>
+        <button class="btn" id="eraser"><b>Eraser</b></button><br><br>
+        <button  id="clear"><b>Clear</b></button>
+             
+        </div>
+        <div class="canvas" id="grid"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

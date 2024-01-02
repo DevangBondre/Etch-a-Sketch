@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#9bedff;
+}
+
+#heading{
+    font-size: 3em;
+    text-align: center;
+    text-shadow:10px 10px 10px  brown;
+    text-decoration: underline;
+    background-color: bisque;
+    height: 80px;
+    margin-top: 0;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start; 
+}
+
+.canvas{
+    display: grid;
+    background-color: white;
+    height: 550px;
+    width: 550px;
+    box-shadow: 5px 3px 5px rgba(0.1,0.1,0.1); 
+    margin-left: 200px;
+    
+}
+
+
+.sketchButtons{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 200px;
+
+}
+
+#gridOptions{
+    text-align: center;
+    height: 50px;
+    font-size: 1em;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#black,#rainbow,#eraser,#clear{
+    height: 50px;
+    font-size: 1em;
+    border: 2px solid black;
+    border-radius: 15px;
+    transition: transform .2s;
+}
+
+#black:hover,#rainbow:hover ,#eraser:hover,#clear:hover{
+
+    transform: scale(1.2);
+}
+
+.buttoncolor {
+    background-color: brown;
+}
