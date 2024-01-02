@@ -22,6 +22,7 @@ gridValues.addEventListener('change',()=> {
     
 function gridCreate(size){
     
+    
     grid.style.gridTemplateColumns = `repeat(${size},1fr)`;
     grid.style.gridTemplateRows = `repeat(${size},1fr)`
 
@@ -31,10 +32,18 @@ function gridCreate(size){
         
 
         grid.appendChild(gridItem);
+        
     }
 
-let isDrawing = false;
 
+gridValues.addEventListener('change',()=>{
+    const selectedOption = parseInt(gridValues.value);
+    currentGridSize = selectedOption;
+    clearGrid();
+    gridCreate(selectedOption)
+})
+
+let isDrawing = false;
 
 grid.addEventListener('mousedown', () => {
     isDrawing = true;
